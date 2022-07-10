@@ -6,9 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Feliz 1 Ano (Kekw)</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <main class="mainSection active">
+      <section class="verificaAna section">
+        <div class="verificaAna__leftSection">
+          <h2 class="verificaAna__title">
+            Roi, Ana né? Espero que seja... Para verificar se é você mesmo,
+            confirma o ínicio do nosso namoro ai...
+          </h2>
+          <form class="verificaAna__form" id="verificaAna__form">
+            <div class="verificaAna__formWrapper">
+              <label for="verificaAna__formInput">Data de namoro</label>
+              <input
+                type="date"
+                name="verificaAna__formInput"
+                id="verificaAna__formInput"
+              />
+              <span class="verificaAna__formError"
+                >A data informada está incorreta</span
+              >
+              <button type="submit" class="button verificaAna__button">
+                Verificar
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="verificaAna__rightSection"></div>
+      </section>
+
+      <section class="gallery section active">
+        <section class="gallery__saudades section active">
+          <div class="gallery__saudadesGrid">
+            <h2>
+              Todas as vezes que eu sinto sua falta, sempre penso nesses
+              momentos
+            </h2>
+            <img src="https://source.unsplash.com/random" alt="" />
+            <img src="https://source.unsplash.com/random" alt="" />
+            <img src="https://source.unsplash.com/random" alt="" />
+            <img src="https://source.unsplash.com/random" alt="" />
+            <img src="https://source.unsplash.com/random" alt="" />
+          </div>
+        </section>
+
+        <footer class="gallery__footer">
+          <nav>
+            <ul class="gallery__footerUl">
+              <li>Saudades</li>
+              <li>Amor</li>
+              <li>Tudo</li>
+            </ul>
+          </nav>
+        </footer>
+      </section>
+    </main>
+
     <script src="script.js"></script>
   </body>
 </html>
