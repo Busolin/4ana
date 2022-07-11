@@ -162,10 +162,22 @@ img {
   gap: 1rem;
 
   overflow-y: scroll;
+
+  max-width: 1000px;
+  margin-bottom: 100px;
 }
 
 .gallery__saudadesGrid h2 {
   grid-column: 1 / -1;
+
+  background-color: #eaacf2;
+  color: #390859;
+
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 4px;
+
+  text-align: justify;
 }
 
 .gallery__saudadesGrid img {
@@ -206,11 +218,11 @@ img {
   position: relative;
 }
 
-.gallery__footerUl li:hover::before {
+.gallery__footerUl li.activeLi::before {
   content: "";
 
   width: 5px;
-  height: 40px;
+  height: 100%;
   background: #4703a6;
 
   display: block;
@@ -241,5 +253,9 @@ img {
 
   .gallery__saudadesGrid {
     grid-template-columns: 1fr;
+  }
+
+  .gallery__footerUl {
+    gap: 0;
   }
 }
